@@ -1,22 +1,103 @@
-* {
-   box-sizing: border-box;
-   padding:0px;
-   margin:0px;
-}
+/*Configurações globais*/
+    * {
+    box-sizing: border-box;
+    padding:0px;
+    margin:0px;
+    font-family: 'Oxanium', cursive;
+    }
 
-main{
-    background-color: aquamarine;
-    width:100vw;
-    height:100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    body{
+        display: flex;
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-color: linear-gradient(to bottom, #6ab7f5, #fff);
+        background-color: #6ab7f5;
+        padding: 30px;
+    }
 
-main div{
-    width:30%;
-    height:30%;
-    background-color: black;
-}
+    main{
+        max-width: 500px;
+        position: relative;
+    }
 
+
+/*Imagem da pokedex*/
+    #pokedex{
+        width: 100%;
+        max-width: 450px;;
+    }
+
+/*Imagem do pokemon*/
+    #pokemon{
+        position: absolute;
+        top: 25%;
+        left: 23%;
+        height: 30%;
+    }
+
+
+/*Botões inferiores*/
+    #buttons{
+        position: absolute;
+        width: 70%;
+
+        top: 80%;
+        right: 20%;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #buttons button{
+        border-radius: 5px;
+        border: 2px solid #000;
+        box-shadow: -3px 4px 0 #222, -5px 7px 0 #000;
+        background-color: #444;
+
+
+        width: 40%;
+        padding: 3%;
+
+        font-size: clamp(8x, 100%, 1rem);
+        color: white;
+        cursor: pointer;
+    }
+
+    #buttons button:active{
+        box-shadow: inset -4px 4px 0 #222;
+    }
+
+/*Título*/
+    #titulo{
+        font-weight: 600;
+        color: #aaa;
+        position: absolute;
+        top: 54%;
+        left: 36%;
+        font-size: clamp(10px, 5vw, 25px);
+    }
+
+    #nome{
+        color: #3a444d;
+        text-transform: capitalize;
+    }
+
+/*Barra de pesquisa*/
+    #barra-pesquisa{
+        position: absolute;
+        top: 67%;
+        right: 20%;
+
+        width: 70%;
+        height: 7%;
+        padding: 1% 3%;
+
+        font-size: clamp(8px, 3vw, 1rem);
+        color: #3a444d;
+
+        border-radius: 5px;
+        border: 2px solid #333;
+        box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+    }
 
