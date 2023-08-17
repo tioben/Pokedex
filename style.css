@@ -31,9 +31,9 @@
 /*Imagem do pokemon*/
     #pokemon{
         position: absolute;
-        top: 25%;
-        left: 23%;
-        height: 30%;
+        top: 29%;
+        left: 33%;
+        width: 25%;
     }
 
 
@@ -65,7 +65,12 @@
     }
 
     #buttons button:active{
+        position: relative;
+        right: 3px;
+        top: 4px;
+
         box-shadow: inset -4px 4px 0 #222;
+        font-size: 70%;
     }
 
 /*Título*/
@@ -74,7 +79,7 @@
         color: #aaa;
         position: absolute;
         top: 54%;
-        left: 36%;
+        left: 20%;
         font-size: clamp(10px, 5vw, 25px);
     }
 
